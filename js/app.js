@@ -6,15 +6,19 @@ let num
 insert.addEventListener("input", numFunction)
 function numFunction(e) {
     // console.log("numFunction")
-    num = Number(e.target.data)
-    // console.log("num", e.target.value)
-
+    num = parseInt(e.target.value)
+    // console.log("numFunction num", num)
+    // console.log("num", parseInt(e.target.value))
 }
 
-// console.log(parseInt(answer.textContent))
+console.log("answer", typeof(parseInt(answer.textContent)))
 
 plusBtn.onclick = function() {
+    // console.log("num", num)
     answer.textContent = parseInt(answer.textContent) + num
+    // console.log(parseInt(answer.textContent) + num)
+    // console.log(parseInt(answer.textContent))
+    // console.log(num)
 }
 
 minusBtn.onclick = function() {
