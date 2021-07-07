@@ -7,7 +7,8 @@ insert.addEventListener("input", numFunction)
 function numFunction(e) {
     // console.log("numFunction")
     num = Number(e.data)
-    // console.log("num", num)
+    console.log("num", e.target.value)
+    
 }
 
 // console.log(parseInt(answer.textContent))
